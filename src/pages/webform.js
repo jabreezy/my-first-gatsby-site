@@ -10,8 +10,6 @@ export default class Webform extends React.Component {
   render() {
     return (
       <>
-        <h1>Webforms John</h1>
-        <p>{JSONData.location}</p>
         <Pages data={JSONData} />
       </>
     );

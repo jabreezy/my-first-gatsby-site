@@ -8,11 +8,13 @@ export default class Pages extends React.Component {
 
   render() {
     const formId = this.props.data.formOrder[0];
-    const pages = this.props.data.forms[formId].paging.map((page) => <Page components={page} />);
+    const getPageComponents = this.props.data.forms[formId].page_components;
+    const pages = this.props.data.forms[formId].paging.map((page, i) => {
+      return <Page key={i} componentIds={page}  pageComponents={getPageComponents} />
+    });
 
     return (
       <>
-        <h2>Pages</h2>
         {pages}
       </>
     );

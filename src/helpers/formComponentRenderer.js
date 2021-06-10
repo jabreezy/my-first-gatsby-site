@@ -21,11 +21,10 @@ export default class FormInputs extends React.Component {
       loader: <Loader componentData={this.props.componentData} />,
       textfield: <Textfield componentData={this.props.componentData} />,
       select: <Select componentData={this.props.componentData} />,
-      hidden: <Hidden componentData={this.props.componentData} />
+      hidden: <Hidden componentData={this.props.componentData} />,
     }
-    //const component = <`${componentMappings[componentType]}` />;
-    const component = componentMappings[componentType];
 
+    const component = componentMappings[componentType];
     return (
       <>
         {component}

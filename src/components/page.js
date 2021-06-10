@@ -14,7 +14,6 @@ export default class Page extends React.Component {
     });
     return (
       <>
-      <h3>page</h3>
       {components}
       </>
     );

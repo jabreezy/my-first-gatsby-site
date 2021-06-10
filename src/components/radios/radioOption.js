@@ -6,7 +6,6 @@ export default class RadioOption extends React.Component {
   }
 
   render() {
-    console.log('props', this.props);
     const { name, option } = this.props;
     const { key, value } = option;
 

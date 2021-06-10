@@ -9,9 +9,7 @@ export default class Webform extends React.Component {
 
   render() {
     return (
-      <>
-        <Pages data={JSONData} />
-      </>
+      <Pages data={JSONData} />
     );
   }
 }
